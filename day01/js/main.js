@@ -56,6 +56,10 @@ let JOE;
 3*2;
 4/2;
 
+let num1 = 1;
+let num2 = 2;
+
+let number3 = num1 + num2;
 
 // Things you can do with Javascript
 // 1. Change the HTML of a page
