@@ -1,0 +1,19 @@
+/* button{
+    background-color: rgb(195, 38, 38);
+    color: white;
+} */
+
+/* .btn1{
+    background-color: rgb(38, 117, 195);
+    color: white;
+} */
+
+/* #myButton{
+    background-color: rgb(38, 195, 90);
+    color: white;
+} */
+
+.active{
+    background-color: rgb(38, 195, 90);
+    color: white;
+}
