@@ -52,6 +52,8 @@ myFunction( x < y);
 myFunction( x == y);
 myFunction( 'hello' !== 'hello');
 
+myFunction( `hello ${x} ${y}`);
+
 
 
 // operators
