@@ -26,6 +26,13 @@ const pet = {
     name: "Milo",
 }
 
+
+
+console.log(document.querySelector('li').innerText);
+console.log(document.querySelector('li').innerHTML);
+
+
+
 function myFunction(text) {
     // let a = 3;
     // let b = 2;
@@ -52,7 +59,7 @@ myFunction( x < y);
 myFunction( x == y);
 myFunction( 'hello' !== 'hello');
 
-myFunction( `hello ${x} ${y}`);
+myFunction( `hello ${x} / ${y}`);
 
 
 
@@ -61,3 +68,34 @@ myFunction( `hello ${x} ${y}`);
 // > < >= <= == === != !==
 // && || !
 
+
+let accountType = prompt('what is your account type?');
+console.log(parseFloat(accountType) + 1); // 25.2a100
+
+// parseInt
+// parseFloat
+// Number
+
+// if (accountType === 'premium') { // truethy
+//     console.log('can create public and private repositories and have unlimited collaborators');
+// } else if(prompt('are you on a trial?')){
+//     console.log('can create public and private repositories and have unlimited collaborators for 30 days');
+// }else if(prompt('are you a student?')){
+//     console.log('can create public and private repositories and have unlimited collaborators for 6 months');
+// }  else {
+//     console.log('you have basic can create public repositories ');
+// }
+
+
+// programming languages capabilities
+
+// 1. variables
+// 2. data types
+// 3. operators
+// 4. control flow
+// 5. functions
+// 6. objects
+// 7. arrays
+// 8. loops
+// 9. events
+// 10. DOM manipulation
