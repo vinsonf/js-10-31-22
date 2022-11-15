@@ -22,7 +22,7 @@ const players = [player1, player2]; // array
 
 const game = {
     level: 1, // property - key: value - prefered for objects
-    score: 0, // property is a variable that is a part of an object
+    score: 10, // property is a variable that is a part of an object
     player: player1,
     isPaused: false,
     players: players,
@@ -100,7 +100,7 @@ if (randomDecimalBetween0and1 > 0.5) {
     // do something
     console.log('this only runs if the condition is true');
 }
-const usersAnswer = prompt('what is your answer?');
+const usersAnswer = 'yes';
 // if ( usersAnswer === 'yes') {
 //     // do something
 //     console.log('if the user reponds "yes"');
@@ -110,13 +110,58 @@ const usersAnswer = prompt('what is your answer?');
 //     console.log('if the user reponds with anything else');
 // }
 
-switch(usersAnswer) {
-    case 'yes':
-        console.log('if the user reponds "yes"');
-        break;
-    case 'no':
-        console.log('if the user reponds with "no"');
-        break;
-    default:
+// switch(usersAnswer) {
+//     case 'yes':
+//         console.log('if the user reponds "yes"');
+//         break;
+//     case 'no':
+//         console.log('if the user reponds with "no"');
+//         break;
+//     default:
+//         console.log('if the user reponds with anything else');
+// }
+
+usersAnswer === 'yes' ?
+ console.log('if the user reponds "yes"') 
+ :
+    usersAnswer === 'no' ?
+        console.log('if the user reponds with "no"')
+        :
         console.log('if the user reponds with anything else');
+
+// if (usersAnswer === 'yes') {
+//     console.log('if the user reponds "yes"');
+// } else {
+//     console.log('if the user reponds with anything else');
+// }
+
+const isValid = (usersAnswer === 'yes') ? "Users answer is yes" : "Users answer is no";
+console.log(isValid); // Users answer is yes
+
+
+
+// functions
+
+// function declaration :    function name   (parameters) 
+function                    myFunction      (  param1, param2 ) {
+    const isValid = false;
+    console.log('hello world', param1, param2,  isValid); // function body
+    return `hello ${param1} and ${param2}`; // return value
 }
+
+myFunction(); // hello world undefined undefined
+
+const sentence = myFunction('mario', 'toad'); // hello world mario luigi
+
+console.log(sentence); // hello mario and luigi
+
+const myObject = {
+    name: 'mario',
+    age: 30,
+    isValid: true,
+    greet: function() {
+        console.log(`hello from ${this.age}`);
+    }
+}
+
+myObject.greet(); // hello from my object
