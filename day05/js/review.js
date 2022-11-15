@@ -148,7 +148,7 @@ function                    myFunction      (  param1, param2 ) {
     console.log('hello world', param1, param2,  isValid); // function body
     return `hello ${param1} and ${param2}`; // return value
 }
-
+// call a function with parenthesis
 myFunction(); // hello world undefined undefined
 
 const sentence = myFunction('mario', 'toad'); // hello world mario luigi
@@ -159,9 +159,24 @@ const myObject = {
     name: 'mario',
     age: 30,
     isValid: true,
-    greet: function() {
-        console.log(`hello from ${this.age}`);
+    greet: function(value) {
+        console.log(`hello from ${this.age + value}`);
     }
 }
 
-myObject.greet(); // hello from my object
+myObject.greet(1); // hello from my object
+// arrow functions
+() => {}; // shorthand for anonymous functions
+
+// function expression
+const myArrowFunction = (param1) => 1 + 1;
+
+const myValue = myArrowFunction('mario', 'luigi');
+
+console.log(myValue); // 2
+
+[1,2,3].forEach(function count(value){
+    console.log(value);
+});
+
+[1,2,3].forEach(value => console.log(value));
