@@ -95,10 +95,12 @@
 function orderPizza(type, deliveryOption){
     console.log('order pizza', type, deliveryOption);
     return new Promise(function(resolve, reject){
-        reject('no more pizza');
-        setTimeout(() => {
+        reject('no more pizza'); /* Running this prevents
+            stops the string of promises
+        */
+        setTimeout(() => { // delay before continuing,
             resolve([type, deliveryOption, true]);
-        }, 2000);
+        }, 2000); // Resolve can pass callbacks or end promises
     });
 }
 
@@ -129,11 +131,11 @@ function deliverPizza(pizzaOptions){
         });
     }
 
-
+// Arguements being passed = param1:type param2:deliveryOption
 orderPizza('pepperoni', 'delivery')
-    .then(makePizza)
+    .then(makePizza) // Returns a promise with 2 arguments
     .then(bakePizza)
     .then(deliverPizza)
-    .catch(function(error){
+    .catch(function(error){ // catch() deals with reject promises
         console.log('error', error);
     })
