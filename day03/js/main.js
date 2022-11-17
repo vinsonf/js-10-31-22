@@ -92,3 +92,15 @@ const colors = ['red', 'blue', 'green', 'yellow']
 const index = Math.ceil(Math.random() * colors.length);
 console.log(colors[index]);
 
+// ====================================================
+const testNum = (a) => {
+    let result;
+    if (a > 0) {
+        result = 'postive';
+    } else {
+        result = 'not postive';
+    }
+    return result;
+}
+
+console.log(testNum(-5));
