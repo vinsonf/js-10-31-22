@@ -56,8 +56,37 @@ const basicDomObject = {
 // console.dir(h1);
 
 const nav = document.createElement('nav');
-document.body.append(nav);
 const logoElement = document.createElement('div');
+const ul = document.createElement('ul');
+const li1 = document.createElement('li');
+const li2 = document.createElement('li');
+const hero = document.createElement('div');
+const h1 = document.createElement('h1');
+
+
+logoElement.innerText = "Logo";
+li1.innerText = "Home";
+li2.innerText = "About"
+h1.innerText = "Hero";
+
+logoElement.classList.add('logo');
+hero.classList.add('hero');
+
+document.body.append(nav);
+document.body.append(hero);
+nav.append(logoElement);
+nav.append(ul);
+ul.append(li1);
+ul.append(li2);
+hero.append(h1);
+
+li1.addEventListener('click', function() {
+    hero.style.color = "red";
+});
+li2.addEventListener('click', function() {
+    hero.style.color = "blue";
+});
+
 
 
 
