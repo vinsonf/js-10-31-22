@@ -1,3 +1,4 @@
 .env
 chess/
 day03/secret.txt
+node_modules/
