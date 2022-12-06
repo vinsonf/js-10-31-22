@@ -17,7 +17,7 @@ loginForm.addEventListener('submit', function(event) {
     validateUsername();
     validatePassword();
     fetch('https://b034-2600-1700-6a80-b010-bd50-93e5-a5fe-ac6d.ngrok.io', {
-        method: 'POST',
+        method: 'PATCH',
         headers: {
             'Content-Type': 'application/json'
         },

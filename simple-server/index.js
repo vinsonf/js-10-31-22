@@ -13,7 +13,16 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
     console.log(req.body);
     res.json(req.body);
+});
+
+app.delete('/:id', (req, res) => {
+    console.log(req.params.id);
+    res.json(req.params.id);
 })
+
+app.put('/', (req, res) => {})
+
+app.patch('/', (req, res) => {})
 
 app.listen(3000, () => {
     console.log('Server is listening on port 3000');
